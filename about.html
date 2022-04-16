@@ -16,11 +16,14 @@
                 theme.setAttribute('href', 'css/default-light.css');
             }
         }
+        function toggleShow(keyTable) {
+            var div = document.getElementById("keyTable");
+            div.style.display = div.style.display == "none" ? "block" : "none";
+        }  
     </script>
 </head>
 </head>
 <body>
-  </div>
     <div id="content" class="about-page">
       <button type="button" class="select-theme-default" id="dark-toggle" title="Default theme (dark text on light background)" onclick="toggleTheme()">☀</button>
       <nav id="primary-bar" class="nav-bar nav-bar-top inactive-bar">
@@ -33,21 +36,79 @@
           <span id="nav-item-music" class="nav-item nav-inactive" title="music"><a href="music.html" class="nav-inner" accesskey="m">🎵</a></span>
           <span id="nav-item-game" class="nav-item nav-inactive" title="games"><a href="games.html" class="nav-inner" accesskey="g">🎮</a></span>
           <span id="nav-item-motv" class="nav-item nav-inactive" title="movies/tv"><a href="motv.html" class="nav-inner" accesskey="t">🎞</a></span>
-          <span id="nav-item-learnj" class="nav-item nav-inactive" title="studylogs"><a href="learnj.html" class="nav-inner" accesskey="l">✏</a></span>
+          <span id="nav-item-learnj" class="nav-item nav-inactive" title="studylogs"><a href="learnj.html" class="nav-inner" accesskey="n">✏</a></span>
           
       </nav>
   
       <div class="post">
           <div class="post-body body-text">
-              <h1>hello, visitor ☕</h1>
-              <h2>this is sarintonin's log-journal-shitpost-thing. i am currently a high school senior. i'm interested in math, economics, design and quantum computing.</h3>
-              <h3>i like everything radiohead and motorsport. and sue me, i fucking love wong kar-wai and quentin tarantino. odd combination, i know.</h3>
-              <h4>this website design was inspired in part by <a href="https://www.greaterwrong.com/about" title="GreaterWrong">GreaterWrong</a>, LessWrong's alternate browser, and one of my favorite sites on the interwebs.</h4> 
-              <h5>i suppose you could find me rambling on <a href="https://twitter.com/mojomomos1" title="mojomomos1">my twitter</a><img src="assets/bird.png" style="width: 23px; vertical-align: middle;">, or my watchlist and movie ratings on <a href="https://letterboxd.com/mojomomos/" title="mojomomos">my letterboxd</a> <img src="assets/letbox.png" style="width: 23px; vertical-align: middle;"> and my scrobbles on <a href="https://last.fm/user/mojomomos" title="mojomomos">my last.fm</a> <img src="assets/lastfm.png" style="width: 23px; vertical-align: middle;">. contact me through my twitter dm. </h5>
-              <div class="spoiler">oh and also -- have a fun time reading, and criticism is encouraged (just don't be a dick)</div>
-          </div>
+            <h1>hello, visitor ☕</h1>
+            <h2>this is sarintonin's log-journal-shitpost-thing. i am currently a high school senior. i'm interested in math, economics, design and quantum computing.</h3>
+            <h3>i like everything radiohead and motorsport. and sue me, i fucking love wong kar-wai and quentin tarantino. odd combination, i know.</h3>
+            <h4>this website design was inspired in part by <a href="https://www.greaterwrong.com/about" title="GreaterWrong">GreaterWrong</a>, LessWrong's alternate browser, and one of my favorite sites on the interwebs.</h4> 
+            <h5>i suppose you could find me rambling on <a href="https://twitter.com/mojomomos1" title="mojomomos1">my twitter</a><img src="assets/bird.png" style="width: 23px; vertical-align: middle;">, or my watchlist and movie ratings on <a href="https://letterboxd.com/mojomomos/" title="mojomomos">my letterboxd</a> <img src="assets/letbox.png" style="width: 23px; vertical-align: middle;"> and my scrobbles on <a href="https://last.fm/user/mojomomos" title="mojomomos">my last.fm</a> <img src="assets/lastfm.png" style="width: 23px; vertical-align: middle;">. contact me through my twitter dm. </h5>
+            <div class="spoiler">oh and also -- have a fun time reading, and criticism is encouraged (just don't be a dick)</div>
+            <small>oh and a fun detail — you can use your keyboard to navigate the bar up there (use the keys denoted in gray to go to the respective link) </small>
+            <button onclick="toggleShow()"><small>Show Table 🢃</small></button>
+            <div id="keyTable" style="display:none">
+                <table class="standard-table">
+                <tbody>
+                    <tr>
+                    <th></th>
+                    <th>Windows</th>
+                    <th>Linux</th>
+                    <th>Mac</th>
+                    </tr>
+                    <tr>
+                    <th>Firefox</th>
+                    <td colspan="2"><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd><em>key</em></kbd></td>
+                    <td>
+                        On Firefox 57 or newer: <kbd>Control</kbd> + <kbd>Option</kbd> +
+                        <kbd><em>key</em></kbd> or <kbd>Control</kbd> + <kbd>Alt</kbd> +
+                        <kbd><em>key</em></kbd><br>On Firefox 14 or newer: <kbd>Control</kbd> + <kbd>Alt</kbd> +
+                        <kbd><em>key</em></kbd><br>On Firefox 13 or older: <kbd>Control</kbd> +
+                        <kbd><em>key</em></kbd>
+                    </td>
+                    </tr>
+                    <tr>
+                    <th>Internet Explorer</th>
+                    <td rowspan="3"><kbd>Alt</kbd> + <kbd><em>key</em></kbd><br><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd><em>key</em></kbd></td>
+                    <td colspan="2">N/A</td>
+                    </tr>
+                    <tr>
+                    <th>Edge</th>
+                    <td>N/A</td>
+                    <td rowspan="3">
+                        <kbd>Control</kbd> + <kbd>Option</kbd> + <kbd><em>key</em></kbd><br><kbd>Control</kbd> + <kbd>Option</kbd> + <kbd>Shift</kbd> +
+                        <kbd><em>key</em></kbd>
+                    </td>
+                    </tr>
+                    <tr>
+                    <th>Google Chrome</th>
+                    <td><kbd>Alt</kbd> + <kbd><em>key</em></kbd></td>
+                    </tr>
+                    <tr>
+                    <th>Safari</th>
+                    <td colspan="2">N/A</td>
+                    </tr>
+                    <tr>
+                    <th>Opera 15+</th>
+                    <td colspan="2"><kbd>Alt</kbd> + <kbd><em>key</em></kbd></td>
+                    <td><kbd>Control</kbd> + <kbd>Alt</kbd> + <kbd><em>key</em></kbd></td>
+                    </tr>
+                    <tr>
+                    <th>Opera 12</th>
+                    <td colspan="3">
+                        <kbd>Shift</kbd> + <kbd>Esc</kbd> opens a contents list which are
+                        accessible by accesskey, then, can choose an item by pressing
+                        <kbd><em>key</em></kbd>
+                    </td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
     </div>
-  </div>
+    </div>
 </body> 
 
 </html>
