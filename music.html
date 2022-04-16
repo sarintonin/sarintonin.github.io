@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang = "en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NotWolframAlpha</title>
+  <link id="theme" rel="stylesheet" 
+        type="text/css" href="css/default-light.css" />
+  
+    <script>
+        function toggleTheme() {
+            var theme = document.getElementsByTagName('link')[0];
+            if (theme.getAttribute('href') == 'css/default-light.css') {
+                theme.setAttribute('href', 'css/default-dark.css');
+            } else {
+                theme.setAttribute('href', 'css/default-light.css');
+            }
+        }
+    </script>
+</head>
+</head>
+<body>
+  </div>
+    <div id="content" class="about-page">
+      <button type="button" class="select-theme-default" id="dark-toggle" title="Default theme (dark text on light background)" onclick="toggleTheme()">☀</button>
+      <nav id="primary-bar" class="nav-bar nav-bar-top inactive-bar">
+      
+      <span id="nav-item-all" class="nav-item nav-inactive" title="latest posts from all sections"><a href="/index?view=all" class="nav-inner" accesskey="a">all</a></span>
+      <span id="nav-item-about" class="nav-item nav-inactive" title="about"><a href="about.html" class="nav-inner" accesskey="b">about</a></span>
+      <span id="nav-item-links" class="nav-item nav-inactive" title="links"><a href="links.html" class="nav-inner" accesskey="l">links</a></span>
+      </nav>
+      <nav id="secondary-bar" class="nav-bar nav-bar-top inactive-bar">
+          <span id="nav-item-music" class="nav-item nav-inactive" title="music"><a href="music.html" class="nav-inner" accesskey="m">🎵</a></span>
+          <span id="nav-item-game" class="nav-item nav-inactive" title="games"><a href="games.html" class="nav-inner" accesskey="g">🎮</a></span>
+          <span id="nav-item-motv" class="nav-item nav-inactive" title="movies/tv"><a href="motv.html" class="nav-inner" accesskey="t">🎞</a></span>
+          <span id="nav-item-learnj" class="nav-item nav-inactive" title="studylogs"><a href="learnj.html" class="nav-inner" accesskey="l">✏</a></span>
+          
+      </nav>
