@@ -1,3 +1,3 @@
 # nwalpha
-private repo for my website
+public repo for my website
 
