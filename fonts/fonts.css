@@ -1,3 +1,35 @@
+/*****************/
+/* ANONYMOUS PRO */
+/*****************/
+
+@font-face {
+	font-family: 'Anonymous Pro';
+	src: url('https://s3.amazonaws.com/fonts.obormot.net/AnonymousPro/AnonymousPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Anonymous Pro';
+	src: url('https://s3.amazonaws.com/fonts.obormot.net/AnonymousPro/AnonymousPro-RegularItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Anonymous Pro';
+	src: url('https://s3.amazonaws.com/fonts.obormot.net/AnonymousPro/AnonymousPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Anonymous Pro';
+	src: url('https://s3.amazonaws.com/fonts.obormot.net/AnonymousPro/AnonymousPro-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
 /************/
 /* CAECILIA */
 /************/
