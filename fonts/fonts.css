@@ -359,7 +359,7 @@
 
 @font-face {
 	font-family: 'Input Sans';
-	src: url('InputSans-Regular.ttf') format('truetype');
+	src: url('https://s3.amazonaws.com/fonts.obormot.net/InputSans/InputSans-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
