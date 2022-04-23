@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>movies and tv</title>
+<html lang="en-US">
+<head class="content-width-normal">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>movies and tv</title>
+<link class="theme" rel="stylesheet" href="../css/default-dark.css"/>
+<link rel="stylesheet" href="../fonts/fonts.css"/>
+
+<script>
+function toggleTheme() {
+            var theme = document.getElementsByTagName('link')[0];
+            if (theme.getAttribute('href') == '../css/default-light.css') {
+                theme.setAttribute('href', '../css/default-dark.css');
+            } else {
+                theme.setAttribute('href', '../css/default-light.css');
+            }
+        }
+</script>
+</head>
 </head>
 <body>
-    <h1>in progress.</h1>
+</div>
+<div id="content" class="index-page frontpage-index-page">
+<button type="button" class="select-theme-default" id="dark-toggle" title="Default theme (dark text on light background)"
+onclick="toggleTheme()">☀</button>
+<nav id="primary-bar" class="nav-bar nav-bar-top inactive-bar">
+<span id="nav-item-all" class="nav-item nav-inactive" title="latest posts from all sections"><a href="../all.html" class="nav-inner" accesskey="a">all</a></span>
+<span id="nav-item-about" class="nav-item nav-inactive" title="about"><a href="../index.html" class="nav-inner" accesskey="b">about</a></span>
+<span id="nav-item-featured" class="nav-item nav-inactive" title="links"><a href="../links.html" class="nav-inner" accesskey="l">links</a></span>
+</nav>
+<nav id="secondary-bar" class="nav-bar nav-bar-top inactive-bar">
+<span id="nav-item-music" class="nav-item nav-inactive" title="music"><a href="music.html" class="nav-inner" accesskey="m">🎵</a></span>
+<span id="nav-item-game" class="nav-item nav-inactive" title="games"><a href="games.html" class="nav-inner" accesskey="g">🎮</a></span>
+<span id="nav-item-motv" class="nav-item nav-inactive" title="movies/tv"><a href="motv.html" class="nav-inner" accesskey="t">🎞</a></span>
+<span id="nav-item-learnj" class="nav-item nav-inactive" title="studylogs"><a href="learnj.html" class="nav-inner" accesskey="l">✏</a></span>
+</nav>
 </body>
 </html>

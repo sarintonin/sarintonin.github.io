@@ -5798,7 +5798,7 @@ a.comment-parent-link::after {
 
 body {
 	color: #000;
-	background-color: #fff;
+	background-color: rgb(240, 240, 240);
 	font-family: 'Anonymous Pro', monospace;
 }
 #content {
@@ -7105,6 +7105,7 @@ button,
 input[type='submit'] {
 	border: 2px solid #000;
 	box-shadow: 0 0 0 1px transparent;
+	background-color: #fff;
 }
 #ui-elements-container button {
 	border: none;

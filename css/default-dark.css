@@ -5799,7 +5799,7 @@ a.comment-parent-link::after {
 
 body {
 	color: #fff;
-	background-color: #000;
+	background-color: rgb(17, 17, 17);
 	font-family: 'Anonymous Pro', monospace;
 }
 #content {
