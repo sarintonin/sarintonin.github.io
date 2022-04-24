@@ -335,7 +335,7 @@
 
 @font-face {
 	font-family: 'Input Sans';
-	src: url('https://s3.amazonaws.com/fonts.obormot.net/InputSans/InputSans-ExtraLightItalic.ttf') format('truetype');
+	src: url('InputSans-ExtraLightItalic.ttf') format('truetype');
 	font-weight: 200;
 	font-style: italic;
 	font-stretch: normal;
