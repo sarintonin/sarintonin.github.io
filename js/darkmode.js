@@ -25,7 +25,7 @@ function userPrefersDarkMode() {
   }
   
   function bootstrap() {
-       const darkModeToggleButton = document.querySelector("dark-toggle");
+       const darkModeToggleButton = document.querySelector("#dark-toggle");
   darkModeToggleButton.addEventListener("click", () => {
     if (userPrefersDarkMode()) {
       setThemePreference("disabled");
