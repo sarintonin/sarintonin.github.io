@@ -7,7 +7,8 @@ function userPrefersDarkMode() {
   function setThemePreference(value) {
     localStorage.setItem("darkMode", value || "disabled");
   }
-  
+  var theme = Window.theme || {};
+
   const enableDarkMode = () => {
     theme.setAttribute('href', './css/default-dark.css');
   };
