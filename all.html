@@ -7,25 +7,32 @@
 <title>all</title>
 <link class="theme" rel="stylesheet" href="css/default-light.css"/>
 <link rel="stylesheet" href="fonts/fonts.css"/>
-
-<script>
-function toggleTheme() {
-            var theme = document.getElementsByTagName('link')[0];
-            if (theme.getAttribute('href') == 'css/default-light.css') {
-                theme.setAttribute('href', 'css/default-dark.css');
-            } else {
-                theme.setAttribute('href', 'css/default-light.css');
-            }
-        }
-</script>
-
 </head>
 </head>
 <body>
 </div>
 <div id="content" class="index-page frontpage-index-page">
-<button type="button" class="select-theme-default" id="toggle" title="Default theme (dark text on light background)"
-onclick="toggleTheme()">🌗</button>
+<button type="button" class="select-theme-default" id="dark-toggle" title="Default theme (dark text on light background)">🌗</button>
+<script>
+    const theme = document.getElementsByClassName("theme")[0];
+    const toggleButton = document.getElementById('dark-toggle')
+    toggleButton.addEventListener('click', () => {
+        if (theme.getAttribute('href') == 'css/default-light.css') {
+                theme.setAttribute('href', 'css/default-dark.css');
+        }
+        else{
+            theme.setAttribute('href', 'css/default-light.css');}
+        
+        if (theme.getAttribute('href') == 'css/default-dark.css'){
+            localStorage.setItem('dark', 'enabled')
+        }
+        else{
+            localStorage.setItem('dark', 'disabled')
+        }});
+    if (localStorage.getItem('dark') == 'enabled'){
+        theme.setAttribute('href', 'css/default-dark.css');
+    }      
+</script>
 <nav id="primary-bar" class="nav-bar nav-bar-top inactive-bar">
 <span id="nav-item-all" class="nav-item nav-inactive" title="latest posts from all sections"><a href="all.html" class="nav-inner" accesskey="a">all</a></span>
 <span id="nav-item-about" class="nav-item nav-inactive" title="about"><a href="index.html" class="nav-inner" accesskey="b">about</a></span>

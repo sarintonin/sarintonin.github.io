@@ -7,35 +7,35 @@
 <title>sarintonin</title>
 <link class="theme" rel="stylesheet" href="css/default-light.css"/>
 <link rel="stylesheet" href="fonts/fonts.css">
-
-<script>
-function toggleTheme() {
-            var theme = document.getElementsByTagName('link')[0];
-            if (theme.getAttribute('href') == 'css/default-light.css') {
-                theme.setAttribute('href', 'css/default-dark.css');
-            } else {
-                theme.setAttribute('href', 'css/default-light.css');
-            }
-        }
-        function toggleShow(keyTable) {
-            var div = document.getElementById("keyTable");
-            div.style.display = div.style.display == "none" ? "block" : "none";
-        }
-</script>
-
-
-</head>
 </head>
 <body>
 <div id="content" class="about-page">
-<button type="button" class="select-theme-default" id="toggle" title="Default theme (dark text on light background)"
-onclick="toggleTheme()">🌗</button>
+<button type="button" class="select-theme-default" id="dark-toggle" title="Default theme (dark text on light background)">🌗</button>
+<script>
+    const theme = document.getElementsByClassName("theme")[0];
+    const toggleButton = document.getElementById('dark-toggle')
+    toggleButton.addEventListener('click', () => {
+        if (theme.getAttribute('href') == 'css/default-light.css') {
+                theme.setAttribute('href', 'css/default-dark.css');
+        }
+        else{
+            theme.setAttribute('href', 'css/default-light.css');}
+        
+        if (theme.getAttribute('href') == 'css/default-dark.css'){
+            localStorage.setItem('dark', 'enabled')
+        }
+        else{
+            localStorage.setItem('dark', 'disabled')
+        }});
+    if (localStorage.getItem('dark') == 'enabled'){
+        theme.setAttribute('href', 'css/default-dark.css');
+    }      
+</script>
 <nav id="primary-bar" class="nav-bar nav-bar-top inactive-bar">
 <span id="nav-item-all" class="nav-item nav-inactive" title="latest posts from all sections"><a href="all.html" class="nav-inner" accesskey="a">all</a></span>
 <span id="nav-item-about" class="nav-item nav-inactive" title="about"><a href="index.html" class="nav-inner" accesskey="b">about</a></span>
 <span id="nav-item-featured" class="nav-item nav-inactive" title="links"><a href="links.html" class="nav-inner" accesskey="l">links</a></span>
 </nav>
-
 <nav id="secondary-bar" class="nav-bar nav-bar-top inactive-bar">
 <span id="nav-item-music" class="nav-item nav-inactive" title="music"><a href="subblogs/music.html" class="nav-inner" accesskey="m">🎵</a></span>
 <span id="nav-item-game" class="nav-item nav-inactive" title="games"><a href="subblogs/games.html" class="nav-inner" accesskey="g">🎮</a></span>
@@ -47,6 +47,7 @@ onclick="toggleTheme()">🌗</button>
 <div class="post-body body-text">
 <h1>hello, visitor 🍵</h1>
 <h2>this is sarintonin's website. i am currently a high school senior.
+<p>
 i'm interested in math, economics, design and quantum computing.</h3>
 i like everything Radiohead and motorsport. i love Wong Kar-Wai and Quentin Tarantino movies. my long-time favorite show is House MD, and hence, the root of my anti-social behavior. <br>
 this website design was inspired in part by <a href="https://www.greaterwrong.com/about" title="GreaterWrong">GreaterWrong</a>, LessWrong's alternate browser, and one of my favorite sites on the interwebs.<br>
@@ -55,10 +56,10 @@ title="mojomomos1">my twitter</a>
 <img src="assets/bird.png" style="width: 23px; vertical-align: middle;">, or my watchlist and movie ratings on <a href="https://letterboxd.com/mojomomos/"
 title="mojomomos">my letterboxd</a>
 <img src="assets/letbox.png" style="width: 23px; vertical-align: middle;"> and my scrobbles on <a href="https://last.fm/user/mojomomos" title="mojomomos">my last.fm</a>
-<img src="assets/lastfm.png" style="width: 23px; vertical-align: middle;">. contact me through my twitter dm. <br>
+<img src="assets/lastfm.png" style="width: 23px; vertical-align: middle;">. contact me through my twitter dm. <br> </p>
+<p>
 i intend to keep adding features and content. this website will continously evolve; but the pace is mostly dependent on me finding time.
-<div class="spoiler">oh and also — have a fun time reading, and criticism is encouraged (just don't
-be a dick)</div>
+</p>
 <small>using keyboard shortcuts to navigate: refer to the below table to get the right combination for your browser</small>
 <div class="backlinks">
     <input type="checkbox" id="expand">
