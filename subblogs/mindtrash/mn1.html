@@ -9,22 +9,27 @@
 <link rel="stylesheet" href="../../fonts/fonts.css"/>
 <script>
 function toggleTheme() {
-            var theme = document.getElementsByTagName('link')[0];
-            if (theme.getAttribute('href') == '../../css/default-light.css') {
-                theme.setAttribute('href', '../../css/default-dark.css');
-            } else {
-                theme.setAttribute('href', '../../css/default-light.css');
-            }
+        var theme = document.getElementsByTagName('link')[0];
+        if (theme.getAttribute('href') == '../../css/default-light.css') {
+            theme.setAttribute('href', '../../css/default-dark.css');
+        } else {
+            theme.setAttribute('href', '../../css/default-light.css');
         }
+        }
+        localStorage.setItem( 'someData', theme.getAttribute('href'));
+        console.log(localStorage.getItem('someData'))
         function toggleShow(keyTable) {
             var div = document.getElementById("keyTable");
             div.style.display = div.style.display == "none" ? "block" : "none";
+
         }
+
+
 </script>
 
 <body class="theme-brutalist">
 <div id="content" class="post-page comment-thread-page">
-<button type="button" class="select-theme-default" id="dark-toggle" title="Default theme (dark text on light background)"
+<button type="button" class="select-theme-default" id="toggle" title="Default theme (dark text on light background)"
 onclick="toggleTheme()">🌗</button>
 <nav id="primary-bar" class="nav-bar nav-bar-top inactive-bar">
 <span id="nav-item-all" class="nav-item nav-inactive" title="latest posts from all sections"><a href="../../all.html" class="nav-inner" accesskey="a">all</a></span>
