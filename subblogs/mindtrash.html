@@ -7,8 +7,6 @@
 <title>movies and tv</title>
 <link class="theme" rel="stylesheet" href="../css/default-light.css"/>
 <link rel="stylesheet" href="../fonts/fonts.css"/>
-
-
 </head>
 </head>
 <body>
@@ -19,20 +17,20 @@
     const theme = document.getElementsByClassName("theme")[0];
     const toggleButton = document.getElementById('dark-toggle')
     toggleButton.addEventListener('click', () => {
-        if (theme.getAttribute('href') == 'css/default-light.css') {
-                theme.setAttribute('href', 'css/default-dark.css');
+        if (theme.getAttribute('href') == '../css/default-light.css') {
+                theme.setAttribute('href', '../css/default-dark.css');
         }
         else{
-            theme.setAttribute('href', 'css/default-light.css');}
+            theme.setAttribute('href', '../css/default-light.css');}
         
-        if (theme.getAttribute('href') == 'css/default-dark.css'){
+        if (theme.getAttribute('href') == '../css/default-dark.css'){
             localStorage.setItem('dark', 'enabled')
         }
         else{
             localStorage.setItem('dark', 'disabled')
         }});
     if (localStorage.getItem('dark') == 'enabled'){
-        theme.setAttribute('href', 'css/default-dark.css');
+        theme.setAttribute('href', '../css/default-dark.css');
     }      
 </script>
 <nav id="primary-bar" class="nav-bar nav-bar-top inactive-bar">
